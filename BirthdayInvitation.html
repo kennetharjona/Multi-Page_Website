@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Invitation</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #080324;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Title with stroke + glow */
+        h1 {
+            color: #ffffff;
+            font-size: 3em;
+            -webkit-text-stroke: 2px #00ffff; /* stroke effect */
+            text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; /* glowing effect */
+        }
+
+        h2 {
+            color: #ffffff;
+            font-size: 2em;
+            -webkit-text-stroke: 1px #ff00ff;
+            text-shadow: 0 0 8px #ff00ff, 0 0 15px #ff00ff;
+        }
+
+        /* birthday box with glowing border */
+        .birthday {
+            background: #030442;
+            padding: 15px;
+            margin: 15px auto;
+            border-radius: 8px;
+            width: 60%;
+            border: 2px solid #00ffcc; /* border color */
+            box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc; /* glowing border */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .bring {
+            margin-top: 0;
+            color: #ffffff;
+            text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00; /* glowing text */
+        }
+
+        .location-title {
+            color: #ffffff; /* teal glow color */
+            text-shadow: 0 0 8px #00ffcc, 0 0 15px #00ffcc;
+            font-weight: bold;
+        }
+
+        .birthday ul {
+            list-style-position: inside;   /* moves bullets inside the text block */
+            padding: 0;                    /* removes default left padding */
+            text-align: center;            /* centers the whole list */
+        }
+
+        .birthday li {
+            color: #ffffff;
+            text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00;
+            margin: 5px 0;                 /* spacing between items */
+        }
+
+        .birthday a {
+            color: #00ffff;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;         /* allows transform scaling */
+            transition: transform 0.3s ease, text-shadow 0.3s ease;
+        }
+
+        .birthday a:hover {
+            transform: scale(1.2);         /* grows bigger */
+            text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+        }
+
+        .birthday img {
+            width: 200px;
+            border-radius: 8px;
+            display: block;
+            margin: 0 auto 10px;
+            box-shadow: 0 0 10px #ffffff, 0 0 20px #00ffff; /* glowing image border */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>It's My Birthday!</h1>
+    <h2>It's on January 10</h2>
+
+    <div class="birthday">
+        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZW1tdGk3ZXd5Zjl4dG80eWVqNmh6b3RrdzA2NTVrZDZhZGVuZ3pjayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohhwmQ0xIg8W3pHd6/giphy.gif" alt="Happy Birthday GIF">
+        <br>
+        <h3 class="bring">What to bring:</h3>
+        <ul>
+            <li>Snacks 🍿</li>
+            <li>Drinks 🥤</li>
+            <li>Party spirit 🎉</li>
+        </ul>
+        <br>
+        <h3 class="location-title">This is where you need to go:</h3>
+        <p>
+            <a href="https://www.google.com/maps/place/SM+City+Valenzuela/" target="_blank">
+                📍 Click here to open location on Google Maps
+            </a>
+        </p>
+    </div>
+</body>
+</html>
